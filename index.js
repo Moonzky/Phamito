@@ -7,7 +7,7 @@ function changeslide(n) {
 }
 
 function showslide(n) {
-    let slides= document.querySelectorAll('.carrousel-slider img')
+    let slides= document.querySelectorAll('.carrousel-slider > div')
     if (n >=slides.length) {
         slider_index= 0
     }
@@ -18,8 +18,8 @@ function showslide(n) {
      slides[slider_index].classList.add('slide-active')
 }
 
-setInterval( ()=>{
+/*setInterval( ()=>{
     changeslide(1)
 },5000
 
-)
+)*/

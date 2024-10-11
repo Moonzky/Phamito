@@ -16,14 +16,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/267b35900f.js" crossorigin="anonymous"></script>
-        
+    <script src="https://kit.fontawesome.com/267b35900f.js" crossorigin="anonymous"></script>
 
-        
+
+
 </head>
 
-<body>
-    <header class="headerourgame">
+<body class="headerourgame">
+    <header>
         <nav>
             <div class="logo">
                 <img src="imagenes/newone.png" />
@@ -37,24 +37,108 @@
 
             </ul>
         </nav>
-        <main>
-
+        <div class="carrousel-box">
             <div class="carrousel">
                 <div class="carrousel-slider">
-                    <img class="slide-active" src="imagenes/im2/swiper1.jpg"> 
-                    <img src="imagenes/im2/swiper2.jpg">
-                    <img src="imagenes/im2/swiper3.webp">
+                    <div class="slide-active carrousel-slide-1"></div>
+                    <div class="carrousel-slide-2">
+                        <div class="aboutgame">
+                            <h1> INVESTIGATE</h1>
+                            <p><b> Immersive Experience:</b> Realistic graphics and sounds as well as a minimal user
+                                interface
+                                ensure a totally immersive experience that will keep you on your toes. <br />
+                                <b> Unique Ghosts:</b> Identify over 20 different ghost types, each with unique traits,
+                                personalities, and abilities to make each investigation feel different from the
+                                last.<br />
+                                <b>Equipment:</b> Use well-known ghost-hunting equipment such as EMF Readers, Spirit
+                                Boxes,
+                                Thermometers, and Night Vision Cameras to find clues and gather as much paranormal
+                                evidence as you
+                                can. Find Cursed Possessions that grant information or abilities in exchange for your
+                                sanity.<br />
+                                <b>Full Voice Recognition:</b> The Ghosts are listening! Use your actual voice to
+                                interact with the
+                                Ghosts through Ouija Boards and EVP Sessions using a Spirit Box.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carrousel-slide-3" ></div>
+                   
                 </div>
-                <button class="carrousel-prev" onclick="changeslide(-1)"> <i class="fa-solid fa-angle-left"></i>  </button>
-                <button class="carrousel-next" onclick="changeslide(1)"> <i class="fa-solid fa-angle-right"></i> </button>
+                <button class="carrousel-prev" onclick="changeslide(-1)"> <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="carrousel-next" onclick="changeslide(1)"> <i class="fa-solid fa-angle-right"></i>
+                </button>
             </div>
-            
-                
-           
-        </main>
+        </div>
     </header>
+    <main>
 
-    
+        <br />
+        <div class="aboutgame">
+            <h1> INVESTIGATE</h1>
+            <p><b> Immersive Experience:</b> Realistic graphics and sounds as well as a minimal user interface
+                ensure a totally immersive experience that will keep you on your toes. <br />
+                <b> Unique Ghosts:</b> Identify over 20 different ghost types, each with unique traits,
+                personalities, and abilities to make each investigation feel different from the last.<br />
+                <b>Equipment:</b> Use well-known ghost-hunting equipment such as EMF Readers, Spirit Boxes,
+                Thermometers, and Night Vision Cameras to find clues and gather as much paranormal evidence as you
+                can. Find Cursed Possessions that grant information or abilities in exchange for your sanity.<br />
+                <b>Full Voice Recognition:</b> The Ghosts are listening! Use your actual voice to interact with the
+                Ghosts through Ouija Boards and EVP Sessions using a Spirit Box.
+            </p>
+            <br />
+            <h1> PLAY YOUR WAY</h1>
+            <p><b>Locations:</b> Choose from over 10 different haunted locations, each with unique twists, hiding
+                spots, and layouts.<br />
+                <b>Game Modes:</b> With 5 default difficulties and hand crafted weekly challenges, there are plenty
+                of ways to test your skills.<br />
+                <b> Teamwork:</b> Dive in head first, get your hands dirty searching for evidence while fighting for
+                your life. If you're not feeling up to the task, play it safe and support your team from the truck
+                by monitoring the investigation with CCTV and motion sensors.<br />
+                <b>Custom Difficulty:</b> Create your own games to tailor the difficulty to your or your group's
+                needs, with proportional rewards and come up with crazy game modes of your own!
+            </p>
+            <br /><br />
+            <h1> MULTIPLAYER</h1>
+            <p><b>Co-operate:</b> Play alongside your friends with up to 4 players in this co-op horror where
+                teamwork is key to your success.<br />
+                <b>Play together:</b> Phasmophobia supports all players together, play with your friends with any
+                combination of input types.
+            </p>
+
+            <br />
+
+            <div class="requisitos">
+                <h4> REQUISITOS DEL SISTEMA</h4> <br />
+                <h5> MÍNIMO</h5>
+                <P> Requiere un procesador y un sistema operativo de 64 bits
+                    <br />SO: Windows 10 64Bit
+                    <br /> Procesador: Intel Core i5-4590 / AMD Ryzen 5 2600
+                    <br /> Memoria: 8 GB de RAM
+                    <br /> Gráficos: NVIDIA GTX 970 / AMD Radeon R9 390
+                    <br /> DirectX: Versión 11
+                    <br />Almacenamiento: 21 GB de espacio disponible
+                    <br /> Compatibilidad con RV: OpenXR
+                    <br /> Notas adicionales: Minimum Specs are for VR, lower specs may work for Non-VR.
+                </P>
+
+
+                <h5> RECOMENDADO</h5>
+                Requiere un procesador y un sistema operativo de 64 bits
+                SO: Windows 10 64Bit
+                Procesador: Intel Core i5-10600 / AMD Ryzen 5 3600
+                Memoria: 8 GB de RAM
+                Gráficos: NVIDIA RTX 2060 / AMD Radeon RX 5700
+                DirectX: Versión 11
+                Red: Conexión de banda ancha a Internet
+                Almacenamiento: 21 GB de espacio disponible
+            </div>
+        </div>
+    </main>
+
+
+
 
 
 
@@ -90,15 +174,13 @@
         <br /><br />
     </footer>
 
-<script src="index.js">
-    
-</script>
-    
+    <script src="index.js">
+
+    </script>
+
 </body>
 
 
 
 
 </html>
-
-
