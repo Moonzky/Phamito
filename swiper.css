@@ -1,7 +1,7 @@
 .carrousel {
     position: relative;
     width: 1300px;
-    height: 290px;
+    height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -10,62 +10,63 @@
     /*border: 1px solid rgb(29, 27, 27);*/
 }
 
-
-.carrousel-slider > div {
-
-}   
+.carrousel-slider {
+    width: 100%;
+    height: 100%;
+}
 
 .carrousel-slide-1 {
+    display: none;
     background-image: url(imagenes/im2/swiper1.jpg);
-    width: 100%;
-display: none;
-height: 100%;
-
-background-position: top center; /*se acomoda arriba en el medio*/
-    background-repeat: no-repeat; /*que no se repita si no abarca toda la pantalla*/
-    background-size: cover; /*que ocupe toda la pantalla si es pequeña*/
 }
 
 .carrousel-slide-2 {
-    background-image: url(imagenes/im2/swiper2.jpg);
-    width: 100%;
     display: none;
-    height: 100%;
-    
-    background-position: top center; /*se acomoda arriba en el medio*/
-        background-repeat: no-repeat; /*que no se repita si no abarca toda la pantalla*/
-        background-size: cover; /*que ocupe toda la pantalla si es pequeña*/}
-.carrousel-slide-3 {
-    background-image: url(imagenes/im2/swiper3.webp);
-    width: 100%;
-    display: none;
-    height: 100%;
-    
-    background-position: top center; /*se acomoda arriba en el medio*/
-        background-repeat: no-repeat; /*que no se repita si no abarca toda la pantalla*/
-        background-size: cover; /*que ocupe toda la pantalla si es pequeña*/}
-.carrousel-slider div.slide-active {  
-display: block;
-
+    background-image: url(imagenes/im2/dots\ campamernto.jpg);
 }
 
-.carrousel-prev, .carrousel-next{
+.carrousel-slide-3 {
+    display: none;
+    background-image: url(imagenes/multi2.webp);
+}
+
+.carrousel-slider div.slide-active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    
+}
+
+.carrousel-prev,
+.carrousel-next {
     position: absolute;
+    height: 100%;
+    width: 60px;
     background: transparent;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.473);
-    top: 50%;
     cursor: pointer;
-
+    transition: background-color .1s ease-in;
+}
+.carrousel-prev:hover,
+.carrousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carrousel-prev {
-    left: 10px;
+    left: 0px;
 }
 
-
 .carrousel-next {
-    right: 10px;
+    right: 0px;
 }
 
 .carrousel-box {
@@ -76,30 +77,23 @@ display: block;
 }
 
 .aboutgame h1 {
-
     font-family: OpenSans;
     font-size: 2em;
     color: white;
-  
-  font-weight: normal;
-  }
-  
-  .aboutgame p {
-  
+
+    font-weight: normal;
+}
+
+.aboutgame pre {
     font-family: Depot New;
     font-size: 1.1em;
     color: white;
-  
-  font-weight: normal;
-  
-  }
-  
-  .aboutgame {
+    white-space: pre-line;
+    font-weight: normal;
+}
+
+.aboutgame {
     margin-left: 80px;
     margin-right: 80px;
-    display: block;
-    
-  }
-
-
-  
+    margin-bottom: 30px;
+}
