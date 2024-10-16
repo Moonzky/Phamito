@@ -165,19 +165,29 @@ footer {
 }
 .requisitos {
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0 64px 0;
 }
+
+
 
 .requisitos section {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    flex-direction: column;
+
+    gap: 40px;
+    
     /* align-items: flex-end; */
 }
 
 .requisitos-contenido {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    gap: 100px;
 }
 
 .requisitos-contenido pre {
@@ -186,6 +196,20 @@ footer {
 
 .requisitos h2 {
     font-family: Depot New;
-    font-size: 1.1em;
+font-size: 1.3em;
     font-weight: normal;
+    border-width: 1px  ;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+
+  }
+
+
+
+.requisitos h3 {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+
+  
 }
+

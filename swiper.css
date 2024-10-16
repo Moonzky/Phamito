@@ -22,12 +22,20 @@
 
 .carrousel-slide-2 {
     display: none;
+<<<<<<< HEAD
     background-image: url(imagenes/im2/swiper2.jpg);
+=======
+    background-image: url(imagenes/im2/dots\ campamernto.jpg);
+>>>>>>> main
 }
 
 .carrousel-slide-3 {
     display: none;
+<<<<<<< HEAD
     background-image: url(imagenes/im2/swiper3.webp);
+=======
+    background-image: url(imagenes/multi2.webp);
+>>>>>>> main
 }
 
 .carrousel-slider div.slide-active {
@@ -39,8 +47,15 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
+=======
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    
+>>>>>>> main
 }
 
 .carrousel-prev,
@@ -82,15 +97,27 @@
     font-weight: normal;
 }
 
+<<<<<<< HEAD
 .aboutgame p {
     font-family: Depot New;
     font-size: 1.1em;
     color: white;
 
+=======
+.aboutgame pre {
+    font-family: Depot New;
+    font-size: 1.1em;
+    color: white;
+    white-space: pre-line;
+>>>>>>> main
     font-weight: normal;
 }
 
 .aboutgame {
     margin-left: 80px;
     margin-right: 80px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 30px;
+>>>>>>> main
 }
