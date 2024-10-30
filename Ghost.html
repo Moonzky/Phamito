@@ -11,87 +11,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link href="diseño.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/267b35900f.js" crossorigin="anonymous"></script>
 
 
 
 </head>
 
-<header>
-    <nav>
-        <div class="logo">
-            <img src="imagenes/newone.png" />
+<body class="no-attachment">
+    <header class="header-ghost">
+        <nav>
+            <div class="logo">
+                <img src="imagenes/newone.png" />
+            </div>
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="game.html"> Our Game </a> </li>
+                <li> <a class="active" href="Ghost.html"> Ghost</a> </li>
+                <li> <a href="cursed.html"> Cursed Possessions</a> </li>
+                <li> <a href="contacto.html"> About Us</a> </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="ghost-container">
+        <div class="ghost-boxes">
+            <div class="ghost-box ghost-active">
+                <h2>Hachuky</h2>
+                <img src="imagenes/DON HACHUKY/Phasmophobia 28_9_2024 23_14_32 (1).png" alt="">
+            </div>
+            <div class="ghost-box">
+                <h2>Cara Larga</h2>
+                <img src="imagenes/doña cara larga/Phasmophobia 2_10_2024 23_40_58.png" alt="">
+            </div>
+            <div class="ghost-box">
+                <h2>El Abuelo</h2>
+                <img src="imagenes/EL ABUELO/Phasmophobia 29_9_2024 00_08_39 (1).png" alt="">
+            </div>
+            <div class="ghost-box">
+                <h2>El Degenerete</h2>
+                <img src="imagenes/EL DEGENERETE/Phasmophobia 28_9_2024 22_53_52.png" alt="">
+            </div> 
+            <div class="ghost-box">
+                <h2>Gordito Parrilero</h2>
+                <img src="imagenes/GORDITO PARRILLERO/Phasmophobia 28_9_2024 22_41_00 (1).png" alt="">
+            </div> 
+            <div class="ghost-box">
+                <h2>La Abuelita</h2>
+                <img src="imagenes/LA ABUELITA/Phasmophobia 28_9_2024 22_54_11.png" alt="">
+            </div> 
+            <div class="ghost-box">
+                <h2>La Contorsionista</h2>
+                <img src="imagenes/LA CONTORSIONISTA/Phasmophobia 3_10_2024 00_50_34 (1).png" alt="">
+            </div> 
+            <div class="ghost-box">
+                <h2>La Niña</h2>
+                <img src="imagenes/LA NIÑA/Phasmophobia 2_10_2024 23_53_19.png" alt="">
+            </div> 
+            <div class="ghost-box">
+                <h2>Paluky</h2>
+                <img src="imagenes/Paluky/Phasmophobia 3_10_2024 00_30_02.png" alt="">
+            </div> 
         </div>
-        <ul>
-            <li> <a href="index.html"> Home </a> </li>
-            <li> <a href="game.html"> Our Game </a> </li>
-            <li> <a href="Ghost.html"> Ghost</a> </li>
-            <li> <a href="cursed.html"> Cursed Possessions</a> </li>
-            <li> <a href="contacto.html"> About Us</a> </li>
+        <div class="ghost-nav">
+            <button onclick="changeghost(1)"> Hachuky </button>
+            <button onclick="changeghost(2)"> Cara Larga </button>
+            <button onclick="changeghost(3)"> El Abuelo </button>
+            <button onclick="changeghost(4)"> El Degenerete </button>
+            <button onclick="changeghost(5)"> Gordito Parrilero </button>
+            <button onclick="changeghost(6)"> La Abuelita </button>
+            <button onclick="changeghost(7)"> La Contorsionista </button>
+            <button onclick="changeghost(8)"> La Niña </button>
+            <button onclick="changeghost(9)"> Paluky </button>
+        </div>
 
-        </ul>
-    </nav>
+    </main>
 
-</header>
+    <footer>
 
-<div class="bodymargin">
+        <div class="socialmedia">
+            <a href="http://"><i class="fa-brands fa-steam"></i></a>
+            <a href="http://"> <img src="imagenes/discblancp.svg"></a>
+            <a href="http://"><img src="imagenes/youtube.svg"></a>
+            <a href="http://"> <img src="imagenes/instagram.svg"></a>
+            <a href="http://"><img src="imagenes/twitter-x.svg"></a>
+        </div>
 
-    <body>
+        <div class="textfot">
 
-
-
-        <main>
-
-            <h1> ''Información de la empresa o marca'' </h1>
-
-            Somos una escuela dedicada a.....
-
-
-        </main>
-
-
-
-
-
+            Kinetic Games
+            <br /> <br />
+            All rights reserved
+            <br /> <br />
+            <i><b>Email: contact@kineticgames.co.ik </b></i>
+            <br /><br />
+            <em><b> For Game Support: Please join our official Discord and contact ModMail or our Tech Support
+                    channels</em></b>
+            <br /><br /> <br />
+            Página de contacto, realizada en clase de Gráfica Asistida II Escuela de Arte de Lujan <br /> Lavalle,
+            Provincia
+            de Bs As <!--BR USADO PARA PUNTO APARTE U ENTER-->
+        </div>
+    </footer>
+    <script src="ghost.js"> </script>
     </body>
-</div>
-
-
-
-<footer>
-
-    <div class="socialmedia">
-        <a href="http://"><i class="fa-brands fa-steam"></i></a>
-        <a href="http://"> <img src="imagenes/discblancp.svg"></a>
-        <a href="http://"><img src="imagenes/youtube.svg"></a>
-        <a href="http://"> <img src="imagenes/instagram.svg"></a>
-        <a href="http://"><img src="imagenes/twitter-x.svg"></a>
-    </div>
-
-    <div class="textfot">
-
-        Kinetic Games
-        <br /> <br />
-        All rights reserved
-        <br /> <br />
-        <i><b>Email: contact@kineticgames.co.ik </b></i>
-        <br /><br />
-        <em><b> For Game Support: Please join our official Discord and contact ModMail or our Tech Support
-                channels</em></b>
-        <br /><br /> <br />
-        Página de contacto, realizada en clase de Gráfica Asistida II Escuela de Arte de Lujan <br /> Lavalle,
-        Provincia
-        de Bs As <!--BR USADO PARA PUNTO APARTE U ENTER-->
-    </div>
-
-
-    <br /><br />
-</footer>
 
 </html>

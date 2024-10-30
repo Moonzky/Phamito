@@ -1,4 +1,4 @@
-let slider_index= 0;
+let slider_index = 0;
 showslide(slider_index)
 
 
@@ -11,15 +11,15 @@ function showslide(n) {
     if (n >=slides.length) {
         slider_index= 0
     }
-     if (n <0) {
+    if (n <0) {
         slider_index= slides.length -1
-     }
-     slides.forEach (slide=> slide.classList.remove('slide-active'))
-     slides[slider_index].classList.add('slide-active')
+    }
+    slides.forEach (slide=> slide.classList.remove('slide-active'))
+    slides[slider_index].classList.add('slide-active')
 }
 
-/*setInterval( ()=>{
+setInterval( ()=>{
     changeslide(1)
 },5000
 
-)*/
+)

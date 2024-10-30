@@ -212,3 +212,103 @@ font-size: 1.3em;
 
   
 }
+
+/* CSS para ghost.html */
+
+.header-ghost {
+    height: auto;
+}
+
+.ghost-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+    margin: 32px 0;
+}
+.ghost-boxes {
+    display: flex;
+    margin: 0 auto 0 auto;
+    /* box-shadow:  1px 1px 3px #2a2a2a, -1px -1px 3px #3c3c3c; */
+}
+
+.ghost-box {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    font-size: 2em;
+    transition: width .3s ease-in, visibility .5s ease-in, opacity .5s ease-in;
+}
+
+.ghost-box h2 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    z-index: 1;
+}
+
+.ghost-box img {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+}
+
+.ghost-box.ghost-active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    width: 600px;
+}
+
+.ghost-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 20px;
+    margin-right: 200px
+}
+
+.ghost-nav button {
+    height: 60px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    /* background-color: red; */
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color .2s ease;
+}
+.ghost-nav button:hover, .ghost-nav-active {
+    background-color: rgba(255, 255, 255, 0.048) !important;
+}
+
+.ghost-nav-active {
+    position: relative;
+}
+
+.ghost-nav-active::before{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: rgb(255, 183, 183);
+    animation: grow 0.4s ease-in-out forwards;
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
