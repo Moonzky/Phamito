@@ -229,7 +229,8 @@ font-size: 1.3em;
 }
 .ghost-boxes {
     display: flex;
-    margin: 0 auto 0 auto;
+    margin: 0 397px 0 auto;
+
     /* box-shadow:  1px 1px 3px #2a2a2a, -1px -1px 3px #3c3c3c; */
 }
 
@@ -251,8 +252,11 @@ font-size: 1.3em;
     color: white;
     position: absolute;
     text-align: center;
-    width: 600px;
+    bottom: 38px;
     z-index: 1;
+    font-size: 0.5em;
+  
+    text-transform: uppercase;
 }
 
 .ghost-box img {
@@ -260,6 +264,7 @@ font-size: 1.3em;
     z-index: 0;
     height: 100%;
 }
+
 
 .ghost-box.ghost-active {
     opacity: 1;
