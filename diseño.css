@@ -32,12 +32,33 @@ header {
     padding: 0 0 0 30px;
 }
 
-.headerourgame header {
-    height: auto;
-}
+
 
 .headerourgame {
-    background-image: url(imagenes/im2/this3.jpg);
+    background-image: url(imagenes/im2/casita.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bodycursed {
+    background-image:none;
+
+}
+
+.headerus{
+    background-image: url(imagenes/im2/this.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.headercursed {
+    background-image: url(imagenes/im2/objtodos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header nav ul {
@@ -216,7 +237,10 @@ font-size: 1.3em;
 /* CSS para ghost.html */
 
 .header-ghost {
-    height: auto;
+    background-image: url(imagenes/lagorojo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ghost-container {
@@ -225,7 +249,7 @@ font-size: 1.3em;
     justify-content: space-between;
     height: 600px;
     width: 100%;
-    margin: 32px 0;
+    margin: 70px 0 150px 0;
 }
 .ghost-boxes {
     display: flex;
@@ -287,11 +311,12 @@ font-size: 1.3em;
     border-radius: 8px;
     /* background-color: red; */
     color: white;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 0, 0, 0.3);
     transition: background-color .2s ease;
+
 }
 .ghost-nav button:hover, .ghost-nav-active {
-    background-color: rgba(255, 255, 255, 0.048) !important;
+    background-color: rgba(255, 0, 0, 0.048) !important;
 }
 
 .ghost-nav-active {
@@ -305,9 +330,87 @@ font-size: 1.3em;
     left: 0;
     width: 0;
     height: 2px; 
-    background-color: rgb(255, 183, 183);
+    background-color: rgb(255, 0, 0);
     animation: grow 0.4s ease-in-out forwards;
 }
+
+
+.divisor {
+    height: 2px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.01) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0.01) 100%); 
+    margin: 0 auto 0 auto;
+    width: 20%;
+}
+
+
+/* CURSED */
+.cursed-container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 200px;
+    
+}
+
+.cursed-descripcion{
+    display: flex;
+flex-direction: row;
+margin: 200px;
+
+
+}
+
+.cursed-img {
+height: 350px;
+border-radius: 16px;
+}
+
+
+.cursed-text{
+    color: white;
+ margin-left: 60px;
+}
+
+.cursed-gif {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cursed-gif img {
+    width: 1000px;
+    margin-bottom: 200px;
+}
+
+.CursedInfo p {
+    font-size: 1em;
+}
+
+.Cursedtittle h1 {
+    font-size: 5em;
+}
+
+
+
+.Ustittle h1 {
+    font-size: 5em;
+}
+
+.UsInfo p{
+    font-size: 1.2em;
+}
+ .UsInfo pre {
+    white-space: pre-line;
+    text-align: center;
+ }
+
+ .footerclase {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 11.8px;
+ }
+
 
 @keyframes grow {
     from {
@@ -317,3 +420,6 @@ font-size: 1.3em;
         width: 100%;
     }
 }
+
+
+
