@@ -1,13 +1,13 @@
 .carrousel {
     position: relative;
-    width: 1300px;
-    height: 600px;
+    width: 81.25rem;
+    height: 37.5rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     /*background-color: black;//
-    /*border: 1px solid rgb(29, 27, 27);*/
+    /*border: .0625rem solid rgb(29, 27, 27);*/
 }
 
 .carrousel-slider {
@@ -49,9 +49,9 @@
 .carrousel-next {
     position: absolute;
     height: 100%;
-    width: 60px;
+    width: 3.75rem;
     background: transparent;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: rgba(255, 255, 255, 0.473);
     cursor: pointer;
     transition: background-color .1s ease-in;
@@ -62,18 +62,18 @@
 }
 
 .carrousel-prev {
-    left: 0px;
+    left: 0rem;
 }
 
 .carrousel-next {
-    right: 0px;
+    right: 0rem;
 }
 
 .carrousel-box {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .aboutgame h1 {
@@ -93,7 +93,7 @@
 }
 
 .aboutgame {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 30px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 1.875rem;
 }
